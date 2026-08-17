@@ -40,24 +40,29 @@
 Windows: ดาวน์โหลดตัวติดตั้ง Tesseract OCR (พร้อมติดตั้งชุดภาษา tha และ eng)
 
 Linux (Ubuntu/Debian):
-
+```
 Bash
 sudo apt-get update
 sudo apt-get install tesseract-ocr tesseract-ocr-tha
+```
 2. ติดตั้ง Python Dependencies
+```
 Bash
 git clone [https://github.com/Kira101111010110/thai-bank-slip-ocr-nlp.git](https://github.com/Kira101111010110/thai-bank-slip-ocr-nlp.git)
 cd thai-bank-slip-ocr-nlp
 pip install -r requirements.txt
+```
 3. รันการประมวลผลสลิป
 รันสกัดข้อมูลสลิป:
-
+```
 Bash
 python slip_ocr_processor.py
+```
 ทดสอบตรวจจับ ROI:
-
+```
 Bash
 python ROI.py
+```
 🔄 กระบวนการทำงานของระบบ (Pipeline Flow)
 Input Image: รับภาพสลิปโอนเงิน (JPG / PNG)
 
