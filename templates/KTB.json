@@ -1,0 +1,54 @@
+{
+  "bank_code": "KTB",
+  "tess_lang": "tha+eng",
+  "preprocess": {
+    "upscale": 2.2
+  },
+  "rois": {
+    "reference": {
+      "box": [0.3000, 0.2550, 0.3200, 0.0400],
+      "psm": 10,
+      "lang": "eng",
+      "whitelist": "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789",
+      "mode": "bin"
+    },
+
+    "payer": {
+      "box": [0.1800, 0.3920, 0.4200, 0.0550],
+      "psm": 7,
+      "lang": "tha+eng",
+      "mode": "gray"
+    },
+
+    "payee": {
+      "box": [0.1800, 0.5850, 0.5200, 0.0650],
+      "psm": 7,
+      "lang": "tha+eng",
+      "mode": "gray"
+    },
+
+    "amount": {
+      "box": [0.7000, 0.7500, 0.2800, 0.0700],
+      "psm": 7,
+      "lang": "eng",
+      "whitelist": "0123456789.,",
+      "mode": "bin"
+    },
+
+    "fee": {
+      "box": [0.7000, 0.8250, 0.2500, 0.0600],
+      "psm": 7,
+      "lang": "eng",
+      "whitelist": "0123456789.,",
+      "mode": "bin"
+    },
+
+    "datetime": {
+      "box": [0.6371, 0.8780, 0.3226, 0.0451],
+      "psm": 11,
+      "lang": "tha+eng",
+      "whitelist": "0123456789/:- ",
+      "mode": "gray"
+    }
+  }
+}
